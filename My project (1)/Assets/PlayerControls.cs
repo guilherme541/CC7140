@@ -12,6 +12,7 @@ public class PlayerControls : MonoBehaviour
         public float speed = 10.0f;             // Define a velocidade da bola
         public float boundY = 2.25f;            // Define os limites em Y
         private Rigidbody2D rb2d;               // Define o corpo rigido 2D que representa a raquete
+        
 
     void Start()
     {
