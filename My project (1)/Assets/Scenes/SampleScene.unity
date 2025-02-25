@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 360574657}
   - component: {fileID: 360574662}
   - component: {fileID: 360574663}
+  - component: {fileID: 360574664}
   m_Layer: 0
   m_Name: PongPaddle_2
   m_TagString: Player
@@ -441,6 +442,20 @@ MonoBehaviour:
   limInf: 3.5
   limSup: -0.333305
   boundX: 2.35
+--- !u!114 &360574664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360574656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c4b9df40f9785248ae53d57f91a58c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSound: {fileID: 8300000, guid: 8b22605a73a7e484990c656c98a2399b, type: 3}
+  volume: 1
 --- !u!1 &485247064
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,9 +698,11 @@ GameObject:
   - component: {fileID: 522233763}
   - component: {fileID: 522233762}
   - component: {fileID: 522233767}
+  - component: {fileID: 522233768}
+  - component: {fileID: 522233769}
   m_Layer: 0
   m_Name: PongPaddle_1
-  m_TagString: Player
+  m_TagString: IA_PLAYER
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -884,6 +901,34 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.9350001
+--- !u!114 &522233768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522233761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff24eb6dafb25b24b86a6272f2eb58df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  maxMovement: 2.5
+--- !u!114 &522233769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522233761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c4b9df40f9785248ae53d57f91a58c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSound: {fileID: 8300000, guid: 8b22605a73a7e484990c656c98a2399b, type: 3}
+  volume: 1
 --- !u!1 &767467893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,6 +1207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d78282e0596a34db4e7d1da0109506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  desaceleracao: 0.6
 --- !u!50 &1245543442
 Rigidbody2D:
   serializedVersion: 4
